@@ -30,7 +30,8 @@ gulp.task('checksums', (cb) => {
 
     files.forEach((file) => {
         const sum = shell.exec(`${command} "${file}" ${argument}`, {
-            cwd: releasePath
+            cwd: releasePath,
+            maxBuffer: 500*1024
         });
 
         if (sum.code !== 0) {
