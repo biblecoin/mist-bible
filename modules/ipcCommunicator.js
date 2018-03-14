@@ -12,7 +12,7 @@ const logger = require('./utils/logger');
 const appMenu = require('./menuItems');
 const Settings = require('./settings');
 const ethereumNode = require('./ethereumNode.js');
-const keyfileRecognizer = require('biblecoin-keyfile-recognizer');
+const keyfileRecognizer = require('ethereum-keyfile-recognizer');
 
 import { getLanguage } from './core/settings/actions';
 
